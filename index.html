@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="أدوات تجارية مجانية تساعدك على حساب الأرباح والتكاليف وتحسين تسويق منتجاتك.">
+  <title>تجارتي | أدوات ذكية لتجارتك</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تجاوز إلى المحتوى</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Tijarati home"><span class="brand-mark">ت</span><span><strong data-i18n="brand">تجارتي</strong><small>TIJARATI</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#tools" data-i18n="navTools">جميع الأدوات</a>
+        <a href="#about" data-i18n="navAbout">عن تجارتي</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+        <button class="lang-btn" id="languageToggle" type="button">EN <span aria-hidden="true">↗</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">مساحة عملك التجاري، بشكل أبسط</span></div>
+          <h1 data-i18n="heroTitle">أدوات ذكية تجعل <em>تجارتك أسهل</em></h1>
+          <p class="hero-lead" data-i18n="heroText">احسب أرباحك، نظّم تكاليفك، وحسّن تسويق منتجاتك باستخدام أدوات مجانية وسهلة.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#tools" data-i18n="exploreTools">استكشف الأدوات <span aria-hidden="true">↙</span></a><a class="btn btn-quiet" href="#about" data-i18n="learnMore">اكتشف تجارتي</a></div>
+          <div class="hero-note"><span class="note-check">✓</span><span data-i18n="heroNote">مجانية · سهلة · تعمل مباشرة في متصفحك</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Business tools preview">
+          <div class="visual-glow"></div>
+          <div class="dashboard-card main-card">
+            <div class="dash-top"><div><span class="mini-label" data-i18n="previewLabel">نظرة على تجارتك</span><strong data-i18n="previewTitle">ملخص سريع</strong></div><span class="dash-icon">↗</span></div>
+            <div class="metric-row"><div><span data-i18n="sampleProfit">الربح التقديري</span><strong>+ 24.80 <small>JOD</small></strong></div><span class="metric-pill">+18.4%</span></div>
+            <div class="chart" aria-hidden="true"><i style="height:28%"></i><i style="height:43%"></i><i style="height:35%"></i><i style="height:57%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:62%"></i><i style="height:91%"></i><i style="height:76%"></i><i style="height:100%"></i><i style="height:83%"></i><i style="height:95%"></i></div>
+            <div class="chart-foot"><span data-i18n="sampleChartCaption">مثال توضيحي فقط</span><span>•••</span></div>
+          </div>
+          <div class="floating-tool floating-top"><span class="float-icon purple">％</span><span><b data-i18n="discountTool">حاسبة الخصومات</b><small data-i18n="quickCalc">حساب سريع</small></span></div>
+          <div class="floating-tool floating-bottom"><span class="float-icon green">↗</span><span><b data-i18n="profitTool">حاسبة الأرباح</b><small data-i18n="clearResults">نتائج واضحة</small></span></div>
+          <div class="decor-dot dot-one"></div><div class="decor-dot dot-two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div class="container trust-items"><span><b>01</b><span data-i18n="trustOne">أدوات عملية</span></span><span><b>02</b><span data-i18n="trustTwo">لا تحتاج إلى حساب</span></span><span><b>03</b><span data-i18n="trustThree">بياناتك تبقى في متصفحك</span></span></div></section>
+
+    <section class="section tools-section" id="tools">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker" data-i18n="toolsKicker">صندوق أدواتك</span><h2 data-i18n="toolsTitle">كل ما تحتاجه، <em>في مكان واحد</em></h2><p data-i18n="toolsText">أدوات بسيطة تساعدك على اتخاذ قرارات أوضح لمشروعك.</p></div>
+          <div class="tool-search"><span aria-hidden="true">⌕</span><input id="toolSearch" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن أداة..." aria-label="Search tools"><kbd>⌘ K</kbd></div>
+        </div>
+        <div class="category-row" id="categoryRow">
+          <button class="category-chip active" data-category="all" data-i18n="catAll">كل الأدوات <span>6</span></button>
+          <button class="category-chip" data-category="finance" data-i18n="catFinance">الحسابات المالية</button>
+          <button class="category-chip" data-category="marketing" data-i18n="catMarketing">التسويق والمحتوى</button>
+        </div>
+        <div class="tool-grid" id="toolGrid">
+          <article class="tool-card" data-tool="profit" data-category="finance"><div class="tool-card-top"><span class="tool-icon icon-blue">↗</span><span class="tool-tag" data-i18n="tagPopular">الأكثر استخدامًا</span></div><h3 data-i18n="profitTitle">حاسبة الأرباح</h3><p data-i18n="profitDesc">اعرف ربحك الصافي وهامش الربح بعد احتساب التكاليف والرسوم.</p><button class="text-link" data-open-tool="profit"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+          <article class="tool-card" data-tool="discount" data-category="finance"><div class="tool-card-top"><span class="tool-icon icon-purple">％</span><span class="tool-tag tag-new" data-i18n="tagFast">سريعة وسهلة</span></div><h3 data-i18n="discountTitle">حاسبة الخصومات</h3><p data-i18n="discountDesc">احسب قيمة الخصم والسعر النهائي في ثوانٍ.</p><button class="text-link" data-open-tool="discount"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+          <article class="tool-card" data-tool="price" data-category="finance"><div class="tool-card-top"><span class="tool-icon icon-orange">◇</span><span class="tool-tag" data-i18n="tagPricing">تسعير ذكي</span></div><h3 data-i18n="priceTitle">حاسبة سعر البيع</h3><p data-i18n="priceDesc">حدد سعرًا مناسبًا بناءً على التكلفة وهامش الربح المستهدف.</p><button class="text-link" data-open-tool="price"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+          <article class="tool-card" data-tool="description" data-category="marketing"><div class="tool-card-top"><span class="tool-icon icon-green">✎</span><span class="tool-tag" data-i18n="tagContent">صناعة المحتوى</span></div><h3 data-i18n="descriptionTitle">كاتب وصف المنتجات</h3><p data-i18n="descriptionDesc">أنشئ وصفًا مرتبًا لمنتجك باستخدام قوالب قابلة للتخصيص.</p><button class="text-link" data-open-tool="description"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+          <article class="tool-card" data-tool="ads" data-category="marketing"><div class="tool-card-top"><span class="tool-icon icon-pink">✦</span><span class="tool-tag" data-i18n="tagIdeas">أفكار جديدة</span></div><h3 data-i18n="adsTitle">مولّد أفكار الإعلانات</h3><p data-i18n="adsDesc">جهّز زوايا إعلانية ونصوصًا أولية لمنصتك المفضلة.</p><button class="text-link" data-open-tool="ads"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+          <article class="tool-card" data-tool="order" data-category="finance"><div class="tool-card-top"><span class="tool-icon icon-teal">▦</span><span class="tool-tag" data-i18n="tagOrders">إدارة الطلبات</span></div><h3 data-i18n="orderTitle">حاسبة تكلفة الطلب</h3><p data-i18n="orderDesc">احسب تكلفة الكمية الواحدة والطلب كاملًا وربحك التقديري.</p><button class="text-link" data-open-tool="order"><span data-i18n="openTool">استخدم الأداة</span> <b>↙</b></button></article>
+        </div>
+        <div class="empty-state hidden" id="emptyState"><span>⌕</span><strong data-i18n="noResults">لم نعثر على أدوات مطابقة</strong><p data-i18n="trySearch">جرّب كلمة بحث أخرى.</p></div>
+      </div>
+    </section>
+
+    <section class="tool-workspace hidden" id="toolWorkspace" aria-live="polite">
+      <div class="container"><div class="workspace-head"><div><span class="section-kicker" data-i18n="workspaceKicker">مساحة العمل</span><h2 id="workspaceTitle">حاسبة الأرباح</h2><p id="workspaceDescription"></p></div><button class="close-workspace" id="closeWorkspace" type="button"><span data-i18n="closeTool">إغلاق الأداة</span> ×</button></div><div id="toolPanel" class="tool-panel"></div></div>
+    </section>
+
+    <section class="section benefits-section" id="about">
+      <div class="container benefits-grid">
+        <div class="benefits-copy"><span class="section-kicker" data-i18n="aboutKicker">عن تجارتي</span><h2 data-i18n="benefitsTitle">وقتك لمشروعك،<br><em>ليس للحسابات المعقدة.</em></h2><p data-i18n="benefitsText">بدأت تجارتي بفكرة بسيطة: جعل الأدوات اليومية لأصحاب المشاريع الصغيرة أوضح وأسهل وصولًا.</p><a class="btn btn-dark" href="#how" data-i18n="howLink">كيف تستخدم الموقع؟ <span>↙</span></a></div>
+        <div class="benefit-list">
+          <div class="benefit-item"><span class="benefit-number">01</span><div><h3 data-i18n="benefitOneTitle">قرارات أوضح</h3><p data-i18n="benefitOneText">افهم تكاليفك وأسعارك قبل اتخاذ قرار البيع.</p></div><span class="benefit-arrow">↗</span></div>
+          <div class="benefit-item"><span class="benefit-number">02</span><div><h3 data-i18n="benefitTwoTitle">بداية سهلة</h3><p data-i18n="benefitTwoText">واجهة بسيطة مصممة لأصحاب المشاريع دون خبرة تقنية.</p></div><span class="benefit-arrow">↗</span></div>
+          <div class="benefit-item"><span class="benefit-number">03</span><div><h3 data-i18n="benefitThreeTitle">خصوصية افتراضية</h3><p data-i18n="benefitThreeText">تعمل الأدوات محليًا ولا تحتاج إلى إنشاء حساب.</p></div><span class="benefit-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how"><div class="container"><div class="section-heading centered"><div><span class="section-kicker" data-i18n="howKicker">بكل بساطة</span><h2 data-i18n="howTitle">ثلاث خطوات، <em>وبدأت</em></h2><p data-i18n="howText">لا إعدادات معقدة ولا حسابات مطلوبة.</p></div></div><div class="steps-grid"><div class="step-card"><span>01</span><div class="step-symbol">⌕</div><h3 data-i18n="stepOneTitle">اختر الأداة</h3><p data-i18n="stepOneText">ابحث عن الأداة التي تناسب مهمتك الحالية.</p></div><div class="step-card"><span>02</span><div class="step-symbol">↳</div><h3 data-i18n="stepTwoTitle">أدخل بياناتك</h3><p data-i18n="stepTwoText">أدخل الأرقام أو تفاصيل المنتج في الحقول.</p></div><div class="step-card"><span>03</span><div class="step-symbol">✓</div><h3 data-i18n="stepThreeTitle">استخدم النتيجة</h3><p data-i18n="stepThreeText">انسخ النتيجة أو عدّل مدخلاتك حتى تصل لما تحتاجه.</p></div></div></div></section>
+
+    <section class="section faq-section" id="faq"><div class="container faq-grid"><div><span class="section-kicker" data-i18n="faqKicker">أسئلة شائعة</span><h2 data-i18n="faqTitle">هل لديك <em>سؤال؟</em></h2><p data-i18n="faqText">إليك إجابات سريعة عن طريقة عمل تجارتي.</p></div><div class="faq-list">
+      <details><summary data-i18n="faqOneQ">هل الأدوات مجانية؟ <span>＋</span></summary><p data-i18n="faqOneA">نعم، الأدوات الموجودة في هذه النسخة مجانية للاستخدام، ولا تحتاج إلى إنشاء حساب.</p></details>
+      <details><summary data-i18n="faqTwoQ">هل يتم حفظ بياناتي؟ <span>＋</span></summary><p data-i18n="faqTwoA">تعمل الحسابات داخل متصفحك ولا تُرسل إلى خادم في هذه النسخة. لا تدخل معلومات حساسة.</p></details>
+      <details><summary data-i18n="faqThreeQ">هل كاتب الوصف يستخدم الذكاء الاصطناعي؟ <span>＋</span></summary><p data-i18n="faqThreeA">لا، يعتمد على قوالب نصية محلية قابلة للتعديل، وليس على نموذج ذكاء اصطناعي متصل بالإنترنت.</p></details>
+      <details><summary data-i18n="faqFourQ">هل النتائج المالية مضمونة؟ <span>＋</span></summary><p data-i18n="faqFourA">النتائج تقديرية وتعتمد على المدخلات التي تقدمها. راجع الضرائب والرسوم والتكاليف الخاصة بنشاطك.</p></details>
+    </div></div></section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div><span class="section-kicker" data-i18n="contactKicker">نحن هنا للمساعدة</span><h2 data-i18n="contactTitle">هل لديك اقتراح؟</h2><p data-i18n="contactText">يسعدنا أن نعرف ما الأداة التي ستفيد مشروعك.</p></div><a class="btn btn-primary" href="mailto:hello@tijarati.example" data-i18n="contactButton">راسلنا عبر البريد <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">ت</span><span><strong data-i18n="brand">تجارتي</strong><small>TIJARATI</small></span></a><p data-i18n="footerText">أدوات أبسط، لقرارات تجارية أوضح.</p><div class="footer-links"><a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a><a href="privacy.html" data-i18n="privacy">سياسة الخصوصية</a><a href="terms.html" data-i18n="terms">شروط الاستخدام</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Tijarati</span><span data-i18n="footerDisclaimer">النتائج تقديرية ولا تُعد استشارة مالية.</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
